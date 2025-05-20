@@ -96,9 +96,9 @@ async def fake_send_message_win_users(amount, KEF, rubs_price, message_id):
     await asyncio.sleep(5)
     fake_users = "".join(random.choice(digits) for _ in range(0, 5))
     fake_transfer = "".join(random.choice(digits) for _ in range(0, 6))
-    date = datetime.datetime.now(pytz.timezone('Europe/Moscow')).strftime('%Y-%m-%d %H:%M:%S')
+    date = datetime.datetime.now(pytz.timezone('Europe/France')).strftime('%Y-%m-%d %H:%M:%S')
 
-    photo = FSInputFile('photos/Wins.png')
+    photo = FSInputFile('photos/Wins.jpg')
     await bot.send_photo(chat_id=channal_id, photo=photo,
                          caption=f'<b><blockquote>🔵 Победа! \n\n'
                                  f'💸 Выигрыш: {round(float(usdt), 2)}$ ({result_win_amount}₽)\n'
