@@ -70,7 +70,7 @@ async def get_transfer_channal():
 
 
 async def send_message_win_users(usdt, result_win_amount, message_id, url, status=None):
-    photo = FSInputFile('photos/Wins.png')
+    photo = FSInputFile('photos/Wins.jpg')
     if status != 'CHECK':
         return await bot.send_photo(chat_id=channal_id, photo=photo,
                                     caption=f'<b><blockquote>🟢 Победа! \n\n'
